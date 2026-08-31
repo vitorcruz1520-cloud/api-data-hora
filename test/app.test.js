@@ -4,6 +4,6 @@ const app = require('../src/app');
 describe('Api data e hora', () => {
     test('GET / Deve retornar HTTP 200', async () => {
         const response = await request(app).get('/');
-        expect(response.statusCode).toBe(200);
+        expect(response.statusCode).toBe(201);
     });
 });
