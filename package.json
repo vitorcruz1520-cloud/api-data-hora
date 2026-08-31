@@ -7,7 +7,6 @@
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "test": "jest"
-    
   },
   "keywords": [
     "node",
@@ -25,7 +24,7 @@
     "node": ">=18"
   },
   "devDependencies": {
-    "jest": "^30.4.2",
+    "jest": "^30.5.0",
     "supertest": "^7.2.2"
   }
 }
