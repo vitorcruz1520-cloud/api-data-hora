@@ -5,3 +5,5 @@ node_modules
 npm-debug.log
 test
 .env
+coverage
+README.md
