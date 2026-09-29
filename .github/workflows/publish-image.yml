@@ -1,4 +1,4 @@
-name:pubicar imagem no GHCR
+name: Publicar imagem no GHCR
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
       - name: Executar testes
         run: npm test
 
-       - name: Gerar nome da imagem em letras minúsculas
+      - name: Gerar nome da imagem em letras minúsculas
         id: image
         shell: bash
         run: |
