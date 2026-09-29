@@ -33,7 +33,7 @@ jobs:
         id: image
         shell: bash
         run: |
-          echo "name=ghcr.io/${github.repository }}" >> $GITHUB_OUTPUT
+          echo "name=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
 
       - name: Gerar tags da imagem
         id: metadata
