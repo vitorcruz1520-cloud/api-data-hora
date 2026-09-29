@@ -29,11 +29,11 @@ jobs:
       - name: Executar testes
         run: npm test
 
-      - name: Gerar nome da imagem em letras minúsculas
+      - name: definir nome de imagem
         id: image
         shell: bash
         run: |
-          echo "name=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+          echo "name=ghcr.io/${github.repository }}" >> $GITHUB_OUTPUT
 
       - name: Gerar tags da imagem
         id: metadata
